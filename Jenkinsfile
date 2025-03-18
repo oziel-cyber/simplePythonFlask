@@ -1,9 +1,10 @@
 pipeline {
-
+    agent any 
     stages {
-        stage("Build")
-            steps{
-                sh "docker build -t simple-python-flask"
+        stage('Build') {
+            steps {
+                echo 'Hello world!' 
             }
+        }
     }
 }
