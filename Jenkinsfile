@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello world!' 
+                sh "docker build -t simple-python-flask ."
             }
         }
     }
